@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Sonhália</title>
+    <meta
+      name="description"
+      content="Sonhália: o Mundo Encantado do Hangul. Cartilha de coreano com app de aprendizado."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Noto+Sans+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site">
+      <div class="hwrap">
+        <button class="brand" data-go="home" type="button" aria-label="Início">
+          <i></i>Sonhália
+        </button>
+        <nav aria-label="Principal">
+          <button data-go="home" type="button">Início</button>
+          <button data-go="story" type="button">História</button>
+          <button data-go="pet" type="button">Meu bichinho</button>
+          <button data-go="map" type="button">Mapa</button>
+          <button data-go="cards" type="button">Cartas</button>
+          <button data-go="corr" type="button">
+            Correções<span class="dot" id="cbadge" hidden>0</span>
+          </button>
+          <button data-go="rules" type="button">Regras</button>
+          <button data-go="tch" type="button">Professora</button>
+        </nav>
+        <div class="hr">
+          <div class="coins" id="coinbox" title="Pérolas" hidden>
+            <svg width="26" height="26" viewBox="-12 -12 24 24" aria-hidden="true">
+              <circle r="10" fill="#fff" stroke="#1B2B4B" stroke-width="2.5" />
+              <circle cx="-3" cy="-3" r="3" fill="#BFEAFF" /></svg
+            ><span id="coins">0</span>
+          </div>
+          <button
+            class="iconbtn"
+            id="theme"
+            type="button"
+            aria-label="Alternar tema claro e escuro"
+            title="Tema claro/escuro"
+          ></button>
+          <div class="avatar" id="av" hidden>J</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <!-- ============ INÍCIO ============ -->
+      <section id="v-home" class="home">
+        <div class="hero">
+          <div class="hbig">
+            <span class="tag" style="color: #fff">Sonhália: o Mundo Encantado do Hangul</span>
+            <h1>Acorde em Sonhália e devolva a cor ao mundo, uma palavra de cada vez.</h1>
+            <p>
+              Leia a cartilha, treine no app, cuide do seu bichinho e receba a correção da
+              professora dentro da plataforma.
+            </p>
+            <div class="hpets" id="hpets"></div>
+          </div>
+          <div class="card">
+            <div class="mode" role="tablist" aria-label="Como entrar">
+              <button type="button" role="tab" id="m-act" aria-selected="true">
+                Ativar minha cartilha
+              </button>
+              <button type="button" role="tab" id="m-in" aria-selected="false">
+                Já tenho conta
+              </button>
+            </div>
+            <form id="f-act" novalidate>
+              <div>
+                <label for="code">Código da cartilha</label>
+                <input
+                  class="code"
+                  id="code"
+                  type="text"
+                  autocomplete="off"
+                  maxlength="13"
+                  placeholder="KOR-XXXX-XXXX"
+                  aria-describedby="code-h"
+                />
+                <p class="hint" id="code-h">
+                  Fica na última página da cartilha, sob a área raspável.
+                </p>
+              </div>
+              <div>
+                <label for="nm">Como podemos te chamar?</label
+                ><input
+                  id="nm"
+                  type="text"
+                  autocomplete="given-name"
+                  placeholder="Seu nome ou apelido"
+                />
+              </div>
+              <div>
+                <label for="em">E-mail</label
+                ><input id="em" type="email" autocomplete="email" placeholder="voce@email.com" />
+              </div>
+              <div>
+                <label for="pw">Senha</label
+                ><input
+                  id="pw"
+                  type="password"
+                  autocomplete="new-password"
+                  placeholder="Mínimo de 8 caracteres"
+                />
+              </div>
+              <label class="chk" for="tm"
+                ><input type="checkbox" id="tm" /><span
+                  >Li e aceito os termos de uso e a política de privacidade.</span
+                ></label
+              >
+              <div class="msg" id="act-msg" role="alert"></div>
+              <button class="btn" type="submit">Ativar e criar conta</button>
+              <div class="demo">
+                Para testar: <code>KOR-3F8M-2LQW</code>. O código <code>KOR-USED-0000</code> simula
+                uma cartilha já ativada.
+              </div>
+            </form>
+            <form id="f-in" novalidate hidden>
+              <div>
+                <label for="em2">E-mail</label
+                ><input id="em2" type="email" autocomplete="email" placeholder="voce@email.com" />
+              </div>
+              <div>
+                <label for="pw2">Senha</label
+                ><input
+                  id="pw2"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Sua senha"
+                />
+              </div>
+              <div class="msg" id="in-msg" role="alert"></div>
+              <button class="btn" type="submit">Entrar</button>
+              <button class="link" type="button" id="forgot" style="align-self: flex-start">
+                Esqueci minha senha
+              </button>
+              <div class="demo">Protótipo: qualquer e-mail e senha entram direto.</div>
+            </form>
+          </div>
+        </div>
+        <div class="feats">
+          <div class="card feat">
+            <div class="fi" style="background: var(--sun)">책</div>
+            <h3>Cartilha e app juntos</h3>
+            <p>
+              Cada unidade da cartilha vira uma região no mapa, com exercícios de gramática e
+              vocabulário.
+            </p>
+          </div>
+          <div class="card feat">
+            <div class="fi" style="background: var(--pink)">집</div>
+            <h3>Seu bichinho, sua casa</h3>
+            <p>
+              Cuide dele, decore a casa e compre melhorias com as pérolas que você ganha estudando.
+            </p>
+          </div>
+          <div class="card feat">
+            <div class="fi" style="background: var(--jade)">선</div>
+            <h3>Correção da professora</h3>
+            <p>Textos e áudios são corrigidos por uma pessoa, e a correção volta para você aqui.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CARTAS ============ -->
+      <section id="v-cards" class="cardsv" hidden>
+        <div class="crumbs">
+          <h1>Cartas de palavras</h1>
+          <span class="tag">Mapa de palavras, flashcards e material impresso</span>
+        </div>
+        <div class="ktabs" role="tablist" aria-label="Seções das cartas">
+          <button role="tab" id="kt-map" aria-selected="true" type="button">
+            Mapa de palavras
+          </button>
+          <button role="tab" id="kt-study" aria-selected="false" type="button">Flashcards</button>
+          <button role="tab" id="kt-print" aria-selected="false" type="button">
+            Material impresso
+          </button>
+        </div>
+
+        <div id="kv-map" class="kgrid">
+          <div id="k-list"></div>
+          <aside class="kpanel" id="k-panel" aria-live="polite"></aside>
+        </div>
+
+        <div id="kv-study" hidden>
+          <p class="sub2">
+            Estude as palavras que você já coletou. Escolha uma unidade e, se quiser, um tema.
+          </p>
+          <div class="kscope">
+            <div>
+              <label for="ks-u">Unidade</label
+              ><select id="ks-u"></select>
+            </div>
+            <div>
+              <label for="ks-t">Tema</label
+              ><select id="ks-t"></select>
+            </div>
+          </div>
+          <div id="k-study"></div>
+        </div>
+
+        <div id="kv-print" hidden>
+          <p class="sub2">
+            Assim as cartas aparecem na cartilha. O número do canto é o mesmo do app: ao digitar, a
+            carta abre no Mapa de palavras. As demais cartas seguem o mesmo modelo e entram conforme
+            as ilustrações e frases forem produzidas.
+          </p>
+          <div class="kpgrid" id="k-pgrid"></div>
+        </div>
+      </section>
+
+      <!-- ============ HISTÓRIA ============ -->
+      <section id="v-story" class="story" hidden>
+        <div class="scenebox" id="st-art"></div>
+        <div class="card stcard">
+          <span class="tag" id="st-n"></span>
+          <h1 id="st-t"></h1>
+          <p id="st-p"></p>
+          <div class="stbar">
+            <button class="btn small ghost" id="st-prev" type="button">Voltar</button>
+            <div class="dots" id="st-dots" aria-hidden="true"></div>
+            <button class="link" id="st-skip" type="button">Pular</button>
+            <button class="btn" id="st-next" type="button">Continuar</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ESCOLHER ============ -->
+      <section id="v-pick" class="pick" hidden>
+        <span class="tag">Cartilha ativada</span>
+        <h1>Escolha o seu bichinho</h1>
+        <p class="sub2">
+          Ele vai estudar coreano com você, comer, morar numa casa e conversar em hangul.
+        </p>
+        <div class="pets" id="pets"></div>
+        <div class="namebox">
+          <label for="petname">Nome do bichinho</label
+          ><input id="petname" type="text" maxlength="14" />
+        </div>
+        <button class="btn" id="adopt" type="button">Adotar</button>
+      </section>
+
+      <!-- ============ BICHINHO ============ -->
+      <section id="v-pet" class="pet" hidden>
+        <div>
+          <div class="scene">
+            <svg id="scene" viewBox="0 0 600 420" role="img" aria-label="Casa do bichinho"></svg>
+            <div class="bubble" id="bubble" role="status"></div>
+          </div>
+          <div class="info">
+            <div class="nm">
+              <h2 id="pname"></h2>
+              <span class="lvl" id="plvl"></span><span class="tag" id="pmood"></span>
+            </div>
+            <div class="stats" id="stats"></div>
+            <div class="acts">
+              <button class="btn small jade" id="a-sleep" type="button">Dormir</button>
+              <button class="btn small alt" id="a-play" type="button">Ir estudar (mapa)</button>
+              <button class="btn small sky" id="a-talk" type="button">Conversar</button>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="stabs" role="tablist">
+            <button role="tab" id="s-bag" aria-selected="true">Mochila</button>
+            <button role="tab" id="s-shop" aria-selected="false">Loja</button>
+          </div>
+          <div class="shelf" id="shelf"></div>
+        </div>
+      </section>
+
+      <!-- ============ MAPA ============ -->
+      <section id="v-map" class="mapv" hidden>
+        <div id="w-world">
+          <div class="crumbs">
+            <h1>O Mundo de Sonhália</h1>
+            <span class="tag">Cada região é uma unidade da cartilha</span>
+          </div>
+          <div class="stage">
+            <div>
+              <div class="mapbox">
+                <svg id="world" viewBox="0 0 1000 660" role="group" aria-label="Mapa-múndi"></svg>
+              </div>
+              <div class="legend">
+                <span><i style="background: var(--jade)"></i>Aberta</span
+                ><span><i style="background: var(--sun)"></i>Concluída</span
+                ><span><i style="background: #9fb0bc"></i>Bloqueada</span
+                ><span>Toque numa região para ver os detalhes.</span>
+              </div>
+            </div>
+            <aside class="panel" id="wpanel" aria-live="polite"></aside>
+          </div>
+        </div>
+        <div id="w-region" hidden>
+          <div class="crumbs">
+            <button class="btn small ghost" id="back" type="button">← Voltar ao mundo</button>
+            <h1 id="rtitle"></h1>
+            <span class="tag" id="rsub"></span>
+          </div>
+          <div class="mapbox">
+            <svg id="rscene" viewBox="0 0 1000 640" role="group" aria-label="Mapa da região"></svg>
+          </div>
+          <div class="card act" id="act"></div>
+        </div>
+      </section>
+
+      <!-- ============ CORREÇÕES ============ -->
+      <section id="v-corr" class="corr" hidden>
+        <span class="tag">Meus envios</span>
+        <h1>Correções da professora</h1>
+        <p class="sub2">
+          Textos e áudios dos desafios chegam à professora por WhatsApp. A correção e os pontos
+          voltam para cá.
+        </p>
+        <div class="sublist" id="sublist"></div>
+      </section>
+
+      <!-- ============ PROFESSORA ============ -->
+      <section id="v-tch" class="tch" hidden>
+        <span class="tag">Visão da professora (demonstração)</span>
+        <h1>Envios para corrigir</h1>
+        <div class="tchbar">
+          <b>Como você veria</b
+          ><span
+            >Cada envio chega no seu WhatsApp com um link. Aqui você escreve a correção e dá os
+            pontos, e o aluno vê na hora.</span
+          >
+        </div>
+        <div class="sublist" id="tlist"></div>
+      </section>
+
+      <!-- ============ REGRAS ============ -->
+
+      <section id="v-rules" class="rules" hidden></section>
+    </main>
+
+    <footer class="foot">
+      <div class="fwrap">
+        <b>Sonhália · o Mundo Encantado do Hangul</b><span>Termos de uso</span
+        ><span>Privacidade</span><span>Fale com a professora</span><span>© 2026 · protótipo</span>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

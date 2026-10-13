@@ -1,0 +1,380 @@
+{
+  "pages": [
+    [4, 11],
+    [12, 21],
+    [22, 31],
+    [32, 41],
+    [42, 53],
+    [54, 67]
+  ],
+  "totals": [20, 20, 24, 20, 24, 28],
+  "secretCost": 120,
+  "units": [
+    {
+      "pt": "Cumprimentos",
+      "nat": "인사",
+      "g": "dokkaebi",
+      "tint": ["#B9F27C", "#79CF5A"],
+      "topic": "-이에요/예요 (ser)",
+      "sum": "Depois de um substantivo, use 이에요 (se ele termina em consoante) ou 예요 (se termina em vogal) para dizer \"ser\". Ex.: 학생이에요, 의사예요.",
+      "words": [
+        ["안녕하세요", "olá"],
+        ["감사합니다", "obrigado(a)"],
+        ["안녕히 가세요", "tchau"],
+        ["미안해요", "desculpe"],
+        ["네", "sim"],
+        ["아니요", "não"]
+      ],
+      "phr": [
+        {
+          "t": ["저는", "한국", "사람이에요"],
+          "pt": "Eu sou coreano(a)."
+        },
+        {
+          "t": ["이것은", "책이에요"],
+          "pt": "Isto é um livro."
+        },
+        {
+          "t": ["제", "이름은", "민수예요"],
+          "pt": "Meu nome é Minsu."
+        }
+      ],
+      "bonus": [
+        {
+          "pt": "Eu sou estudante.",
+          "s": "저는 학생___.",
+          "o": ["이에요", "예요"],
+          "a": 0,
+          "e": "학생 termina em consoante (ㅇ), então usamos 이에요."
+        },
+        {
+          "pt": "Eu sou médico(a).",
+          "s": "저는 의사___.",
+          "o": ["이에요", "예요"],
+          "a": 1,
+          "e": "의사 termina em vogal, então usamos 예요."
+        },
+        {
+          "pt": "Escolha a frase correta: \"Eu sou coreano(a).\"",
+          "s": "",
+          "o": ["저는 한국 사람이에요.", "저는 한국 사람예요."],
+          "a": 0,
+          "e": "사람 termina em consoante (ㅁ), então o certo é 이에요, e não 예요."
+        }
+      ],
+      "write": {
+        "ko": "자기소개를 써 보세요.",
+        "pt": "Escreva uma breve apresentação de si mesmo (3 a 5 frases) usando 이에요/예요."
+      },
+      "speak": {
+        "ko": "자기소개를 소리 내어 말해 보세요.",
+        "pt": "Grave um áudio de cerca de 30 segundos se apresentando."
+      }
+    },
+    {
+      "pt": "Família",
+      "nat": "가족",
+      "g": "haetae",
+      "tint": ["#FFD9A0", "#F2A65A"],
+      "topic": "Tópico com 은/는",
+      "sum": "A partícula 은/는 marca o tema da frase: 은 depois de consoante e 는 depois de vogal. Ex.: 엄마는, 동생은.",
+      "words": [
+        ["엄마", "mãe"],
+        ["아빠", "pai"],
+        ["형", "irmão mais velho"],
+        ["누나", "irmã mais velha"],
+        ["동생", "irmão mais novo"],
+        ["할머니", "avó"]
+      ],
+      "phr": [
+        {
+          "t": ["우리", "엄마는", "선생님이에요"],
+          "pt": "Minha mãe é professora."
+        },
+        {
+          "t": ["아빠는", "의사예요"],
+          "pt": "Meu pai é médico."
+        },
+        {
+          "t": ["동생은", "학생이에요"],
+          "pt": "Meu irmão mais novo é estudante."
+        }
+      ],
+      "bonus": [
+        {
+          "pt": "Minha mãe é professora.",
+          "s": "엄마___ 선생님이에요.",
+          "o": ["은", "는"],
+          "a": 1,
+          "e": "엄마 termina em vogal, então usamos 는."
+        },
+        {
+          "pt": "Meu irmão mais novo é estudante.",
+          "s": "동생___ 학생이에요.",
+          "o": ["은", "는"],
+          "a": 0,
+          "e": "동생 termina em consoante (ㅇ), então usamos 은."
+        },
+        {
+          "pt": "Escolha a frase correta: \"Meu pai é médico.\"",
+          "s": "",
+          "o": ["아빠는 의사예요.", "아빠은 의사예요."],
+          "a": 0,
+          "e": "아빠 termina em vogal, então 는. E 의사 também termina em vogal, então 예요."
+        }
+      ],
+      "write": {
+        "ko": "가족을 소개하세요.",
+        "pt": "Apresente sua família em 3 a 5 frases, usando 은/는."
+      },
+      "speak": {
+        "ko": "가족을 소개하는 말을 녹음하세요.",
+        "pt": "Grave um áudio apresentando sua família."
+      }
+    },
+    {
+      "pt": "Comida",
+      "nat": "음식",
+      "g": "turtle",
+      "tint": ["#A8EFB4", "#52C281"],
+      "topic": "Objeto com 을/를",
+      "sum": "A partícula 을/를 marca o objeto da frase: 을 depois de consoante e 를 depois de vogal. Ex.: 물을 마셔요, 사과를 먹어요.",
+      "words": [
+        ["물", "água"],
+        ["밥", "arroz"],
+        ["국수", "macarrão"],
+        ["사과", "maçã"],
+        ["차", "chá"],
+        ["맛있어요", "gostoso"]
+      ],
+      "phr": [
+        {
+          "t": ["저는", "물을", "마셔요"],
+          "pt": "Eu bebo água."
+        },
+        {
+          "t": ["저는", "사과를", "먹어요"],
+          "pt": "Eu como maçã."
+        },
+        {
+          "t": ["국수를", "주세요"],
+          "pt": "Macarrão, por favor."
+        }
+      ],
+      "bonus": [
+        {
+          "pt": "Eu bebo água.",
+          "s": "물___ 마셔요.",
+          "o": ["을", "를"],
+          "a": 0,
+          "e": "물 termina em consoante (ㄹ), então usamos 을."
+        },
+        {
+          "pt": "Eu como maçã.",
+          "s": "사과___ 먹어요.",
+          "o": ["을", "를"],
+          "a": 1,
+          "e": "사과 termina em vogal, então usamos 를."
+        },
+        {
+          "pt": "Escolha a frase correta: \"Macarrão, por favor.\"",
+          "s": "",
+          "o": ["국수를 주세요.", "국수을 주세요."],
+          "a": 0,
+          "e": "국수 termina em vogal (수), então usamos 를."
+        }
+      ],
+      "write": {
+        "ko": "좋아하는 음식을 쓰세요.",
+        "pt": "Escreva sobre sua comida favorita em 3 a 5 frases, usando 을/를."
+      },
+      "speak": {
+        "ko": "식당에서 주문하는 말을 녹음하세요.",
+        "pt": "Grave um áudio pedindo um prato num restaurante."
+      }
+    },
+    {
+      "pt": "Escola",
+      "nat": "학교",
+      "g": "magpie",
+      "tint": ["#BFE3FF", "#6DB7F2"],
+      "topic": "Lugar com 에 e 에서",
+      "sum": "에 indica destino ou onde algo está (학교에 가요, 교실에 있어요). 에서 indica o lugar onde uma ação acontece (도서관에서 공부해요).",
+      "words": [
+        ["선생님", "professor(a)"],
+        ["학생", "aluno(a)"],
+        ["책", "livro"],
+        ["연필", "lápis"],
+        ["교실", "sala de aula"],
+        ["친구", "amigo(a)"]
+      ],
+      "phr": [
+        {
+          "t": ["학생은", "교실에", "있어요"],
+          "pt": "O aluno está na sala de aula."
+        },
+        {
+          "t": ["저는", "학교에", "가요"],
+          "pt": "Eu vou à escola."
+        },
+        {
+          "t": ["친구는", "도서관에서", "공부해요"],
+          "pt": "Meu amigo estuda na biblioteca."
+        }
+      ],
+      "bonus": [
+        {
+          "pt": "O aluno está na sala de aula.",
+          "s": "학생이 교실___ 있어요.",
+          "o": ["에", "에서"],
+          "a": 0,
+          "e": "Para dizer onde alguém ou algo está (있어요), usamos 에."
+        },
+        {
+          "pt": "Eu estudo na biblioteca.",
+          "s": "저는 도서관___ 공부해요.",
+          "o": ["에", "에서"],
+          "a": 1,
+          "e": "Para o lugar onde uma ação acontece (공부해요), usamos 에서."
+        },
+        {
+          "pt": "Meu amigo vai à escola.",
+          "s": "친구는 학교___ 가요.",
+          "o": ["에", "에서"],
+          "a": 0,
+          "e": "Com verbos de movimento como 가요 (ir), o destino leva 에."
+        }
+      ],
+      "write": {
+        "ko": "학교에서 무엇을 해요?",
+        "pt": "Escreva o que você faz na escola, usando 에 e 에서."
+      },
+      "speak": {
+        "ko": "친구에게 학교를 소개하세요.",
+        "pt": "Grave um áudio apresentando sua escola a um amigo."
+      }
+    },
+    {
+      "pt": "Viagem",
+      "nat": "여행",
+      "g": "dragon",
+      "tint": ["#FFD0E4", "#F58AB8"],
+      "topic": "Passado -았/었어요",
+      "sum": "O passado educado usa -았어요/-었어요: 가다 → 갔어요, 먹다 → 먹었어요, 타다 → 탔어요.",
+      "words": [
+        ["비행기", "avião"],
+        ["기차", "trem"],
+        ["공항", "aeroporto"],
+        ["표", "bilhete"],
+        ["호텔", "hotel"],
+        ["여권", "passaporte"]
+      ],
+      "phr": [
+        {
+          "t": ["저는", "공항에", "갔어요"],
+          "pt": "Eu fui ao aeroporto."
+        },
+        {
+          "t": ["어제", "기차를", "탔어요"],
+          "pt": "Ontem eu peguei o trem."
+        },
+        {
+          "t": ["우리는", "호텔에서", "잤어요"],
+          "pt": "Nós dormimos no hotel."
+        }
+      ],
+      "bonus": [
+        {
+          "pt": "Ontem eu fui ao aeroporto.",
+          "s": "어제 공항에 ___.",
+          "o": ["갔어요", "가요", "갈 거예요"],
+          "a": 0,
+          "e": "갔어요 é o passado de 가다. 가요 é presente e 갈 거예요 é futuro."
+        },
+        {
+          "pt": "Ontem eu comi maçã.",
+          "s": "어제 사과를 ___.",
+          "o": ["먹었어요", "먹어요", "먹을 거예요"],
+          "a": 0,
+          "e": "먹었어요 é o passado de 먹다 (a vogal ㅓ pede -었어요)."
+        },
+        {
+          "pt": "Semana passada eu peguei o trem.",
+          "s": "지난주에 기차를 ___.",
+          "o": ["탔어요", "타요", "탈 거예요"],
+          "a": 0,
+          "e": "탔어요 é o passado de 타다 (타 + 았어요 vira 탔어요)."
+        }
+      ],
+      "write": {
+        "ko": "어제 무엇을 했어요?",
+        "pt": "Conte o que você fez ontem, usando o passado."
+      },
+      "speak": {
+        "ko": "어제 한 일을 말해 보세요.",
+        "pt": "Grave um áudio contando o que fez ontem."
+      }
+    },
+    {
+      "pt": "Cidade",
+      "nat": "도시",
+      "g": "toad",
+      "tint": ["#D9CCFF", "#9A83F0"],
+      "topic": "Direções e 에서 … 까지",
+      "sum": "Use 왼쪽 e 오른쪽 para esquerda e direita, e 에서 … 까지 para \"de … até …\". Ex.: 집에서 학교까지.",
+      "words": [
+        ["은행", "banco"],
+        ["가게", "loja"],
+        ["병원", "hospital"],
+        ["지하철", "metrô"],
+        ["왼쪽", "esquerda"],
+        ["오른쪽", "direita"]
+      ],
+      "phr": [
+        {
+          "t": ["은행은", "왼쪽에", "있어요"],
+          "pt": "O banco fica à esquerda."
+        },
+        {
+          "t": ["지하철역은", "오른쪽에", "있어요"],
+          "pt": "A estação de metrô fica à direita."
+        },
+        {
+          "t": ["집에서", "학교까지", "멀어요"],
+          "pt": "Da casa até a escola é longe."
+        }
+      ],
+      "bonus": [
+        {
+          "pt": "O banco fica à esquerda.",
+          "s": "은행은 ___에 있어요.",
+          "o": ["왼쪽", "오른쪽", "위"],
+          "a": 0,
+          "e": "왼쪽 significa esquerda. 오른쪽 é direita e 위 é \"em cima\"."
+        },
+        {
+          "pt": "Da casa até a escola é longe.",
+          "s": "집에서 학교___ 멀어요.",
+          "o": ["까지", "부터", "에게"],
+          "a": 0,
+          "e": "에서 … 까지 significa \"de … até …\"."
+        },
+        {
+          "pt": "A estação de metrô fica perto daqui.",
+          "s": "지하철역은 여기___ 가까워요.",
+          "o": ["에서", "를", "이"],
+          "a": 0,
+          "e": "여기에서 가깝다 quer dizer \"perto daqui\": 에서 marca o ponto de onde se mede a distância."
+        }
+      ],
+      "write": {
+        "ko": "집에서 학교까지 어떻게 가요?",
+        "pt": "Explique como ir de casa até a escola."
+      },
+      "speak": {
+        "ko": "길을 설명해 보세요.",
+        "pt": "Grave um áudio explicando o caminho até a escola."
+      }
+    }
+  ]
+}

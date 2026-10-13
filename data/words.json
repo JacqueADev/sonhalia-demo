@@ -1,0 +1,349 @@
+[
+  {
+    "name": "Cumprimentos",
+    "nat": "인사",
+    "themes": [
+      {
+        "name": "Saudações",
+        "cat": "SAUDAÇÕES",
+        "col": "#FFD27A",
+        "words": [
+          ["안녕하세요", "olá", "expressão"],
+          ["안녕히 가세요", "tchau (para quem vai embora)", "expressão"],
+          ["안녕히 계세요", "tchau (para quem fica)", "expressão"],
+          ["만나서 반갑습니다", "prazer em conhecer", "expressão"],
+          ["처음 뵙겠습니다", "muito prazer (primeiro encontro)", "expressão"],
+          ["또 만나요", "até logo", "expressão"]
+        ]
+      },
+      {
+        "name": "Cortesia",
+        "cat": "CORTESIA",
+        "col": "#FF9B8F",
+        "words": [
+          ["감사합니다", "obrigado(a) (formal)", "expressão"],
+          ["고마워요", "obrigado(a)", "expressão"],
+          ["미안해요", "desculpe", "expressão"],
+          ["죄송합니다", "sinto muito (formal)", "expressão"],
+          ["괜찮아요", "tudo bem", "expressão"]
+        ]
+      },
+      {
+        "name": "Apresentação",
+        "cat": "APRESENTAÇÃO",
+        "col": "#9BD3FF",
+        "words": [
+          ["저", "eu (formal)", "pronome"],
+          ["이름", "nome", "substantivo"],
+          ["사람", "pessoa", "substantivo"],
+          ["한국", "Coreia", "substantivo"],
+          ["브라질", "Brasil", "substantivo"]
+        ]
+      },
+      {
+        "name": "Respostas básicas",
+        "cat": "BÁSICAS",
+        "col": "#9FE3B6",
+        "words": [
+          ["네", "sim", "expressão"],
+          ["아니요", "não", "expressão"],
+          ["여기", "aqui", "pronome"],
+          ["저기", "ali", "pronome"]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Família",
+    "nat": "가족",
+    "themes": [
+      {
+        "name": "Família",
+        "cat": "FAMÍLIA",
+        "col": "#B9A6FF",
+        "words": [
+          ["가족", "família", "substantivo"],
+          ["엄마", "mãe", "substantivo"],
+          ["아빠", "pai", "substantivo"],
+          ["부모님", "pais", "substantivo"],
+          ["아들", "filho", "substantivo"],
+          ["딸", "filha", "substantivo"]
+        ]
+      },
+      {
+        "name": "Irmãos e avós",
+        "cat": "IRMÃOS E AVÓS",
+        "col": "#FFC48A",
+        "words": [
+          ["형", "irmão mais velho (de um homem)", "substantivo"],
+          ["누나", "irmã mais velha (de um homem)", "substantivo"],
+          ["오빠", "irmão mais velho (de uma mulher)", "substantivo"],
+          ["언니", "irmã mais velha (de uma mulher)", "substantivo"],
+          ["동생", "irmão(ã) mais novo(a)", "substantivo"],
+          ["할머니", "avó", "substantivo"],
+          ["할아버지", "avô", "substantivo"]
+        ]
+      },
+      {
+        "name": "Pessoas e casa",
+        "cat": "PESSOAS E CASA",
+        "col": "#8FE0F0",
+        "words": [
+          ["아기", "bebê", "substantivo"],
+          ["어린이", "criança", "substantivo"],
+          ["남자", "homem", "substantivo"],
+          ["여자", "mulher", "substantivo"],
+          ["집", "casa", "substantivo"]
+        ]
+      },
+      {
+        "name": "Animais",
+        "cat": "ANIMAIS",
+        "col": "#FFC48A",
+        "words": [
+          ["고양이", "gato", "substantivo"],
+          ["강아지", "cachorrinho", "substantivo"]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Comida",
+    "nat": "음식",
+    "themes": [
+      {
+        "name": "Bebidas",
+        "cat": "BEBIDAS",
+        "col": "#8FE0F0",
+        "words": [
+          ["물", "água", "substantivo"],
+          ["차", "chá", "substantivo"],
+          ["커피", "café", "substantivo"],
+          ["우유", "leite", "substantivo"],
+          ["주스", "suco", "substantivo"]
+        ]
+      },
+      {
+        "name": "Pratos",
+        "cat": "PRATOS",
+        "col": "#FF9BC4",
+        "words": [
+          ["밥", "arroz (refeição)", "substantivo"],
+          ["국수", "macarrão", "substantivo"],
+          ["김치", "kimchi", "substantivo"],
+          ["빵", "pão", "substantivo"],
+          ["고기", "carne", "substantivo"],
+          ["계란", "ovo", "substantivo"],
+          ["생선", "peixe", "substantivo"]
+        ]
+      },
+      {
+        "name": "Frutas",
+        "cat": "FRUTAS",
+        "col": "#FF9B8F",
+        "words": [
+          ["사과", "maçã", "substantivo"],
+          ["바나나", "banana", "substantivo"],
+          ["딸기", "morango", "substantivo"],
+          ["포도", "uva", "substantivo"],
+          ["수박", "melancia", "substantivo"],
+          ["귤", "tangerina", "substantivo"]
+        ]
+      },
+      {
+        "name": "Verbos e pedidos",
+        "cat": "VERBOS",
+        "col": "#B9A6FF",
+        "words": [
+          ["먹다", "comer", "verbo"],
+          ["마시다", "beber", "verbo"],
+          ["맛있다", "ser gostoso", "adjetivo"],
+          ["주세요", "por favor / me dê", "expressão"],
+          ["배고프다", "estar com fome", "adjetivo"],
+          ["좋아하다", "gostar", "verbo"]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Escola",
+    "nat": "학교",
+    "themes": [
+      {
+        "name": "Lugares da escola",
+        "cat": "ESCOLA",
+        "col": "#FFD27A",
+        "words": [
+          ["학교", "escola", "substantivo"],
+          ["교실", "sala de aula", "substantivo"],
+          ["도서관", "biblioteca", "substantivo"],
+          ["운동장", "pátio", "substantivo"],
+          ["화장실", "banheiro", "substantivo"]
+        ]
+      },
+      {
+        "name": "Materiais",
+        "cat": "MATERIAIS",
+        "col": "#C9E77A",
+        "words": [
+          ["책", "livro", "substantivo"],
+          ["연필", "lápis", "substantivo"],
+          ["공책", "caderno", "substantivo"],
+          ["가방", "mochila", "substantivo"],
+          ["지우개", "borracha", "substantivo"],
+          ["칠판", "lousa", "substantivo"]
+        ]
+      },
+      {
+        "name": "Estudo",
+        "cat": "ESTUDO",
+        "col": "#8FD0FF",
+        "words": [
+          ["선생님", "professor(a)", "substantivo"],
+          ["학생", "aluno(a)", "substantivo"],
+          ["친구", "amigo(a)", "substantivo"],
+          ["공부하다", "estudar", "verbo"],
+          ["숙제", "dever de casa", "substantivo"]
+        ]
+      },
+      {
+        "name": "Cores",
+        "cat": "CORES",
+        "col": "#9BD3FF",
+        "words": [
+          ["흰색", "branco", "substantivo"],
+          ["검은색", "preto", "substantivo"],
+          ["빨간색", "vermelho", "substantivo"],
+          ["파란색", "azul", "substantivo"]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Viagem",
+    "nat": "여행",
+    "themes": [
+      {
+        "name": "Transportes",
+        "cat": "TRANSPORTES",
+        "col": "#8FD0FF",
+        "words": [
+          ["비행기", "avião", "substantivo"],
+          ["기차", "trem", "substantivo"],
+          ["버스", "ônibus", "substantivo"],
+          ["택시", "táxi", "substantivo"],
+          ["배", "navio / barco", "substantivo"],
+          ["자전거", "bicicleta", "substantivo"]
+        ]
+      },
+      {
+        "name": "Destinos",
+        "cat": "DESTINOS",
+        "col": "#FFD27A",
+        "words": [
+          ["공항", "aeroporto", "substantivo"],
+          ["역", "estação", "substantivo"],
+          ["호텔", "hotel", "substantivo"],
+          ["여행", "viagem", "substantivo"],
+          ["바다", "mar", "substantivo"],
+          ["산", "montanha", "substantivo"]
+        ]
+      },
+      {
+        "name": "Itens de viagem",
+        "cat": "ITENS DE VIAGEM",
+        "col": "#FF9B8F",
+        "words": [
+          ["표", "bilhete", "substantivo"],
+          ["여권", "passaporte", "substantivo"],
+          ["지도", "mapa", "substantivo"],
+          ["사진", "foto", "substantivo"],
+          ["카메라", "câmera", "substantivo"],
+          ["돈", "dinheiro", "substantivo"]
+        ]
+      },
+      {
+        "name": "Verbos de viagem",
+        "cat": "VERBOS DE VIAGEM",
+        "col": "#9BD3FF",
+        "words": [
+          ["가다", "ir", "verbo"],
+          ["오다", "vir", "verbo"],
+          ["타다", "pegar / andar de (transporte)", "verbo"],
+          ["자다", "dormir", "verbo"],
+          ["도착하다", "chegar", "verbo"],
+          ["출발하다", "partir", "verbo"]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cidade",
+    "nat": "도시",
+    "themes": [
+      {
+        "name": "Lugares da cidade",
+        "cat": "LUGARES",
+        "col": "#9FE3B6",
+        "words": [
+          ["은행", "banco", "substantivo"],
+          ["가게", "loja", "substantivo"],
+          ["병원", "hospital", "substantivo"],
+          ["시장", "mercado", "substantivo"],
+          ["우체국", "correio", "substantivo"],
+          ["공원", "parque", "substantivo"],
+          ["식당", "restaurante", "substantivo"],
+          ["약국", "farmácia", "substantivo"]
+        ]
+      },
+      {
+        "name": "Direções",
+        "cat": "DIREÇÕES",
+        "col": "#B9A6FF",
+        "words": [
+          ["왼쪽", "esquerda", "substantivo"],
+          ["오른쪽", "direita", "substantivo"],
+          ["앞", "frente", "substantivo"],
+          ["뒤", "atrás", "substantivo"],
+          ["위", "em cima", "substantivo"],
+          ["아래", "embaixo", "substantivo"]
+        ]
+      },
+      {
+        "name": "Ruas e trânsito",
+        "cat": "TRÂNSITO",
+        "col": "#FFC48A",
+        "words": [
+          ["지하철", "metrô", "substantivo"],
+          ["정류장", "ponto de ônibus", "substantivo"],
+          ["길", "rua / caminho", "substantivo"],
+          ["횡단보도", "faixa de pedestres", "substantivo"],
+          ["신호등", "semáforo", "substantivo"]
+        ]
+      },
+      {
+        "name": "Descrições",
+        "cat": "DESCRIÇÕES",
+        "col": "#9FE3B6",
+        "words": [
+          ["크다", "ser grande", "adjetivo"],
+          ["작다", "ser pequeno", "adjetivo"],
+          ["멀다", "ser longe", "adjetivo"],
+          ["가깝다", "ser perto", "adjetivo"],
+          ["많다", "ser muito / haver muito", "adjetivo"]
+        ]
+      },
+      {
+        "name": "Verbos da cidade",
+        "cat": "VERBOS",
+        "col": "#B9A6FF",
+        "words": [
+          ["걷다", "andar a pé", "verbo"],
+          ["찾다", "procurar", "verbo"],
+          ["만나다", "encontrar", "verbo"],
+          ["물어보다", "perguntar", "verbo"]
+        ]
+      }
+    ]
+  }
+]

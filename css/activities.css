@@ -1,0 +1,231 @@
+/* atividades */
+.act {
+  margin-top: 18px;
+}
+.act h2 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+.act .lead {
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.mem {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.mc {
+  aspect-ratio: 1/1.05;
+  border: 3px solid var(--outline);
+  border-radius: 16px;
+  background: var(--violet);
+  font-family: var(--f-ko), var(--f-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1b2b4b;
+  padding: 4px;
+  line-height: 1.15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 0 var(--outline);
+}
+.mc.up {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: none;
+  transform: translateY(3px);
+}
+.mc.pt {
+  font-family: var(--f-body);
+  font-size: 1rem;
+}
+.mc.got {
+  background: var(--jade);
+  color: #1b2b4b;
+  box-shadow: none;
+  transform: translateY(3px);
+}
+.tr {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.line {
+  min-height: 64px;
+  border: 3px dashed var(--line);
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.bank {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.tok {
+  border: 3px solid var(--outline);
+  background: var(--sun);
+  color: #1b2b4b;
+  border-radius: 14px;
+  padding: 8px 14px;
+  font-family: var(--f-ko);
+  font-weight: 700;
+  font-size: 1.3rem;
+  box-shadow: 0 3px 0 var(--outline);
+}
+.tok.used {
+  opacity: 0.25;
+  box-shadow: none;
+}
+.shake {
+  animation: shake 0.35s;
+}
+@keyframes shake {
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
+.win {
+  text-align: center;
+  padding: 6px;
+}
+.win h3 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+.lessons {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lessons li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: var(--field);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-weight: 700;
+}
+.lessons .nb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2.5px solid var(--outline);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: var(--surface);
+  flex: none;
+}
+.lessons li.ok .nb {
+  background: var(--jade);
+}
+.lessons li div {
+  flex: 1;
+}
+.sumbox {
+  background: color-mix(in srgb, var(--sky) 16%, var(--surface));
+  border: 2px solid var(--sky);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.qs {
+  font-size: 1.5rem;
+  font-family: var(--f-ko);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.opts {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.opt {
+  border: 3px solid var(--outline);
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 10px 18px;
+  font-family: var(--f-ko);
+  font-weight: 700;
+  font-size: 1.25rem;
+  box-shadow: 0 3px 0 var(--outline);
+}
+.opt.right {
+  background: var(--jade);
+  color: #1b2b4b;
+}
+.opt.wrong {
+  background: var(--coral);
+  color: #1b2b4b;
+}
+.fb {
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.fb.ok {
+  background: color-mix(in srgb, var(--jade) 22%, var(--surface));
+  border: 2px solid var(--jade);
+}
+.fb.no {
+  background: color-mix(in srgb, var(--coral) 20%, var(--surface));
+  border: 2px solid var(--coral);
+}
+.fb .ko {
+  font-size: 1.15rem;
+}
+.prompt {
+  background: var(--field);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+.prompt .ko {
+  font-size: 1.35rem;
+  font-weight: 700;
+  display: block;
+}
+.badge {
+  display: inline-block;
+  border-radius: 99px;
+  border: 2px solid var(--outline);
+  padding: 0 10px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #1b2b4b;
+  background: var(--sun);
+  vertical-align: middle;
+  margin-left: 6px;
+}
+.qrplate {
+  width: 120px;
+  height: 120px;
+  border: 3px solid var(--outline);
+  border-radius: 14px;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  flex: none;
+}

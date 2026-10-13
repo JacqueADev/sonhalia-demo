@@ -1,0 +1,42 @@
+{
+  "흰색": {
+    "art": "nuvem",
+    "sentence": "하늘에 흰 구름이 있어요.",
+    "translation": "Há uma nuvem branca no céu."
+  },
+  "사과": {
+    "art": "maca",
+    "sentence": "저는 사과를 먹어요.",
+    "translation": "Eu como maçã."
+  },
+  "학교": {
+    "art": "escola",
+    "sentence": "저는 학교에 가요.",
+    "translation": "Eu vou à escola."
+  },
+  "고양이": {
+    "art": "gato",
+    "sentence": "고양이가 의자에 있어요.",
+    "translation": "O gato está na cadeira."
+  },
+  "기차": {
+    "art": "trem",
+    "sentence": "어제 기차를 탔어요.",
+    "translation": "Ontem eu peguei o trem."
+  },
+  "물": {
+    "art": "agua",
+    "sentence": "저는 물을 마셔요.",
+    "translation": "Eu bebo água."
+  },
+  "먹다": {
+    "art": "comer",
+    "sentence": "저는 밥을 먹어요.",
+    "translation": "Eu como arroz."
+  },
+  "크다": {
+    "art": "grande",
+    "sentence": "코끼리는 커요.",
+    "translation": "O elefante é grande."
+  }
+}

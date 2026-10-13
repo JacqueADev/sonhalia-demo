@@ -1,0 +1,27 @@
+{
+  "pets": [
+    {
+      "k": "tiger",
+      "n": "범이",
+      "d": "Tigre forte, leal e comilão"
+    },
+    {
+      "k": "bunny",
+      "n": "달이",
+      "d": "Coelho da lua, sonhador"
+    },
+    {
+      "k": "fox",
+      "n": "미호",
+      "d": "Raposa esperta de nove caudas"
+    }
+  ],
+  "say": {
+    "feed": ["맛있어요!", "Gostoso!"],
+    "play": ["재미있어요!", "Divertido!"],
+    "hi": ["안녕하세요!", "Olá!"],
+    "sleep": ["피곤해요", "Estou cansado."],
+    "hungry": ["배고파요", "Estou com fome."],
+    "thanks": ["감사합니다!", "Obrigado!"]
+  }
+}
